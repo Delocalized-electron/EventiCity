@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "566334376144",
+    "firebase_url": "https://eventicity-8bfcb.firebaseio.com",
+    "project_id": "eventicity-8bfcb",
+    "storage_bucket": "eventicity-8bfcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566334376144:android:8e596472ecfb5937",
+        "android_client_info": {
+          "package_name": "com.example.android.eventicity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566334376144-1oa4oeefolvgr1basae7n3e50grfs13o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.eventicity",
+            "certificate_hash": "fadf8538c11e60a4c78ab0d46d7b54af35fe1a38"
+          }
+        },
+        {
+          "client_id": "566334376144-inufck2rtjpn8j72o8l340am805mf7gf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHgbh7-b9CzTondq5T-QK4uy_XUPlKJ5k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566334376144-inufck2rtjpn8j72o8l340am805mf7gf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
