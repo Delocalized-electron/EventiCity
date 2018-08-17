@@ -79,6 +79,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             // Signed in successfully, show authenticated UI.
 
             Toast.makeText(getApplicationContext(),"Sign in Succesfully!", Toast.LENGTH_LONG).show();
+            startActivity(new Intent(LoginActivity.this, EventsActivity.class));
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
             // Please refer to the GoogleSignInStatusCodes class reference for more information.
