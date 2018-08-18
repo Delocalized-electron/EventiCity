@@ -45,6 +45,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 // the GoogleSignInAccount will be non-null.
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
         Toast.makeText(getApplicationContext(),"Already logged in!", Toast.LENGTH_LONG).show();
+        startActivity(new Intent(LoginActivity.this, EventsActivity.class));
+        finish();
     }
 
     @Override
@@ -80,6 +82,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
             Toast.makeText(getApplicationContext(),"Sign in Succesfully!", Toast.LENGTH_LONG).show();
             startActivity(new Intent(LoginActivity.this, EventsActivity.class));
+            finish();
         } catch (ApiException e) {
             // The ApiException status code indicates the detailed failure reason.
             // Please refer to the GoogleSignInStatusCodes class reference for more information.
