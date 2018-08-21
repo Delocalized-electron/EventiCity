@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     {
         super.onStart();
         // Check for existing Google Sign In account, if the user is already signed in
-// the GoogleSignInAccount will be non-null.
+        // the GoogleSignInAccount will be non-null.
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
         Toast.makeText(getApplicationContext(),"Already logged in!", Toast.LENGTH_LONG).show();
         startActivity(new Intent(LoginActivity.this, EventsActivity.class));

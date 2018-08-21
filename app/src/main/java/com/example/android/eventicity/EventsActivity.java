@@ -63,7 +63,7 @@ public class EventsActivity extends AppCompatActivity {
 
             @Override
             public void run() {
-                finish();
+
                 doubleBackToExitPressedOnce=false;
             }
         }, 2000);
