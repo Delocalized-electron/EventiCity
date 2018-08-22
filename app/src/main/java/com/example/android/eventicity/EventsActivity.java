@@ -1,5 +1,6 @@
 package com.example.android.eventicity;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -9,6 +10,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import android.os.Handler;
+
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 
 public class EventsActivity extends AppCompatActivity {
 
@@ -42,7 +46,25 @@ public class EventsActivity extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(EventsActivity.this);
+        if (acct != null) {
+            String userName = acct.getDisplayName();
+            String personGivenName = acct.getGivenName();
+            String personFamilyName = acct.getFamilyName();
+            String personEmail = acct.getEmail();
+            String personId = acct.getId();
+            Uri personPhoto = acct.getPhotoUrl();
+            TextView textView = (TextView) findViewById(R.id.message);
+            textView.setText(userName);
+
+        }
+
+
     }
+
+
+
 
     boolean doubleBackToExitPressedOnce = false;
 
